@@ -3,59 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blink effect</title>
+    <title>Document</title>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    html,body{
-        width: 100%;
-        height: 100%;
-    }
-    #main{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #box{
-        position: relative;
-        width: 110px;
-        height: 110px;
-        border-radius: 50%;
-        background-color: rgb(28, 189, 189);
-        animation: blink 1s linear infinite alternate;
-    }
-    #box1{
-        position: absolute;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        background-color: aqua;
-        /* animation: blink 1s linear infinite ; */
-    }
-    @keyframes 
-    blink {
-        from{
-            transform: scale(1);
-            opacity: 0.9;
-        }
-        to{
-            transform: scale(0.8);
-            opacity: 0.1;
-        }
-        
-    }
-
-</style>
 <body>
-    <div id="main">
-        <div id="box"></div>
-        <div id="box1"></div>
-    </div>
+    <form onsubmit="handleSubmit(event)">
+    <label for="firstname">First Name</label>
+    <br>
+    <input type="text" name="" id="firstname">
+    <br><br>
+    <label for="lastname">last Name</label>
+    <br>
+    <input type="text" name="" id="lastname">
+    <br><br>
+    <label for="age">Age</label>
+    <br>
+    <input type="number" onkeyup="validate('age')" name="" id="age">
+    <br><br>
+    <label for="phone">phone</label>
+    <br>
+    <input type="number" onkeyup="validate('phone')" name="" id="phone">
+    <br><br>
+    <label for="gender">Gender</label>
+    <br>
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" name="gender" id="male">
+    <br><br>
+    <label for="female">female</label>
+    <br>
+    <input type="radio" name="gender" id="female">
+    <br><br>
+    <p id="error">error</p>
+    <!-- <input type="submit" name="submit" id="submit"> -->
+    <button id="submit">submit</button>
+</form>
+    <script src="script.js"></script>
+    
 </body>
 </html>

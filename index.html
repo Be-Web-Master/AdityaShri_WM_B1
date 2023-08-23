@@ -3,59 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blink effect</title>
+    <title>Dom Excersice</title>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    html,body{
-        width: 100%;
-        height: 100%;
-    }
-    #main{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #box{
-        position: relative;
-        width: 110px;
-        height: 110px;
-        border-radius: 50%;
-        background-color: rgb(28, 189, 189);
-        animation: blink 1s linear infinite alternate;
-    }
-    #box1{
-        position: absolute;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        background-color: aqua;
-        /* animation: blink 1s linear infinite ; */
-    }
-    @keyframes 
-    blink {
-        from{
-            transform: scale(1);
-            opacity: 0.9;
-        }
-        to{
-            transform: scale(0.8);
-            opacity: 0.1;
-        }
-        
-    }
-
-</style>
 <body>
-    <div id="main">
-        <div id="box"></div>
-        <div id="box1"></div>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Exploration Assignment</title>
+</head>
+<body>
+    <h1 id="main-heading">Welcome to DOM Exploration Assignment</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="fullName" value="John Doe">
+    </form>
+    <div class="content">
+        <p>This is a paragraph within a div.</p>
     </div>
+    <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <div id="container">
+        <p>This is a container element.</p>
+        <div class="inner-box">
+            <p>This is an inner box.</p>
+        </div>
+    </div>
+</body>
+</html>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+button{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* body.forEach((tablerow) => {
+    const {elem,columnelems} = tablerow;
+    const trelement = document.createElement(elem);
+    columnelems.forEach((cellElement) => {
+        const trElement = document.createElement(cellElement.elemType);
+        tdElement.innerText = cellElement.value;
+        trElement.append(tdElement);
+    })
+    tableBody.append(trelement);
+    
+}); */
+
+/* // const bodies = arr.body;
+// for (let j = 0;j<bodies.length;j++) {
+//     const { elementTypetr , rowOrder, RowElement} = bodies[j];
+//     const createElement = document.createElement(elementTypetr)
+//     const innerbodies = bodies.RowElement;
+//     for(let z = 0; z < innerbodies.length;z++ ){
+//         const {elementTypetd ,columnName ,rowOrder, value } = innerbodies[z];
+//         const createElement = document.createElement(elementTypetd)
+//         createElement.innerText = columnName
+//         idHead.appendChild(createElement)
+//     }
+//     console.log("loop run")
+// }
+// bocy.forEach(tablerow => {
+//     const {elem,columnelems} = tablerow;
+//     const
+
+// }); */

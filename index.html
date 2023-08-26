@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <button id="addcol" onclick="addColumnBtn()">add column</button>
-    <button id="addrow" onclick="addRowBtn()">add row</button>
-
-    <table border="1" id="idtable">
+    <div id="container">
+      <button id="addcol" onclick="addColumnBtn()">add column</button>
+      <button id="addrow" onclick="addRowBtn()">add row</button>
+  
+    <table id="idtable">
       <!-- column----th append -->
       <thead id="idHead">
+        <!-- <tr>
+            <th>Alfreds Futterkiste</th>
+            <th>Maria Anders</th>
+            <th>Germany</th>
+          </tr>
+          <tr>
+            <th>Alfreds Futterkiste</th>
+            <th>Maria Anders</th>
+            <th>Germany</th>
+          </tr> -->
       </thead>
       <!-- row -->
       <tbody id="idBody">
@@ -29,6 +40,8 @@
       </tbody>
     </table>
    
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -130,11 +130,17 @@ dataStore()
 
 
 const addNewColumn = (columnData) =>{
-    tableData.header.push(columnData)
-    tableData.body.forEach((tableRow,idx) =>{
-        const{columnElems = [] } = tableRow
-
+    arr.header.push(columnData)
+    arr.body.forEach((tableRow,idx) =>{
+        const{RowElement = [] } = tableRow;
+        RowElement.push({
+          elementTypetd : "td",
+          columnName: columnData.columnName,
+          rowOrder: idx,
+          value : `cell ${columnData,columnName}${idx}`,
+        })
     })
+    dataStore(arr)
 }
 
 

@@ -1,25 +1,50 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from "react"
 
-function App() {
+function Task() {
+  const [input, setInput] = useState("")
+  const [data, setdata] = useState([])
+
+
+
+  const submitHandler = (e) =>{
+    e.preventDefault()
+    console.log(input)
+    // const newData = [data,...input]
+    const newData = ([...data,{input}])
+    setdata(newData)
+    setInput("")
+    console.log(data)
+  }
+  let showList = <h2>No task</h2>
+  if(data.length > 0){
+    showList = data.map((obj ,idx) =>{
+      return <li id='card' key={idx}>{obj.input} <button onClick = {() => {
+        let copy = [...data]
+        copy.splice(idx,1)
+        setdata(copy)
+      }}>X</button></li>
+    })
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <>
+    <form  onSubmit={submitHandler}>
+      <input type="text" id='input' placeholder="Enter the Task" value={input} onChange={(e) =>{
+        setInput(e.target.value)
+      }}/>
+      <button id='submitbtn' type="submit">submit</button>
+    </form>
+    <hr/>
+
+    <div>
+      <ol>
+        {showList}
+      </ol>
     </div>
+    
+    </>
   );
 }
 
-export default App;
+export default Task;

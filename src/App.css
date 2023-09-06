@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,69 @@
   to {
     transform: rotate(360deg);
   }
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form{
+  /* background-color: aqua; */
+  padding: 2vw;
+}
+#input{
+  /* background-color: red; */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgb(71, 61, 61);
+  margin: 0 3vw;
+  padding: 0.5vw;
+  /* color: white; */
+  font-size: 2vw;
+  font-weight: 300;
+}
+#input:hover{
+  box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+#submitbtn{
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(112, 112, 224);
+  box-shadow: 3px 3px 10px rgb(144, 148, 196);
+  margin: 0 3vw;
+  padding: 1vw 3vw;
+  color: white;
+  font-size: 2vw;
+  font-weight: 600;
+}
+#submitbtn:hover{
+  box-shadow: 3px 3px 10px black;
+}
+#card{
+  margin: 1vw;
+  padding: 1vw;
+  background-color: rgb(232, 195, 126);
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgb(50, 46, 46);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2vw;
+  font-weight: 600;
+}
+#card>button{
+  padding: 0vw 1vw;
+  text-align: center;
+  font-weight: 900;
+  background-color: rgb(240, 66, 66);
+  /* border: none; */
+  margin-left: 3vw;
+  border-radius: 5px;
+}
+#card>button:hover {
+  background-color: white;
+  color: red;
+
 }

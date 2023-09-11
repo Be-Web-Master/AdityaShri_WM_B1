@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState} from "react"
-
 function Task() {
   const [input, setInput] = useState("")
   const [data, setdata] = useState([])

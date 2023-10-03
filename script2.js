@@ -5,6 +5,6 @@ function getLeftSwappedArrayByIndex(arr,swapLeftBy){
   return [...rightPart, ...leftPart];
 }
 const arr = [1,2,3,4,5,6]
-const swapLeftBy = 2
+const swapLeftBy = 3
 var ans = getLeftSwappedArrayByIndex(arr,swapLeftBy)
 console.log(ans);

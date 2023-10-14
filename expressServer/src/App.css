@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container{
+  width: 30%;
+  height: 14vw;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px black;
+  font-size: 1.1vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  margin: 1vw;
+}
+.pera{
+  text-align: center;
+  width: 50%;
+  /* background-color: red; */
+}
+.btn{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bt{
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(159, 242, 140);
+  box-shadow: 2px 2px 2px black;
+}
+.bt:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+}
+@media screen and (max-width: 400px){
+  .container{
+    width: 60%;
+    height: 20vw;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px black;
+    font-size: 1vw;
+    margin: 1vw;
+  }
+  .pera{
+    width: 80%;
+    /* background-color: red; */
+  }
+  .btn{
+    width: 63%;
+    /* background-color: rgb(60, 0, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .bt{
+    margin-top: 2vw;
+    background-color: red;
+  }
+}
